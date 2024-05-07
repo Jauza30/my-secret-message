@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi-Dekripsi Algoritma Kriptografi Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Enkripsi-Dekripsi Algoritma Kriptografi Modern</h2>
+        <div class="input-container">
+            <div class="input-group">
+                <label for="plaintext">Plaintext:</label>
+                <textarea id="plaintext" placeholder="Teks yang akan dienkripsi"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="ciphertext">Ciphertext:</label>
+                <textarea id="ciphertext" placeholder="Teks yang akan didekripsi"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="key">Key:</label>
+                <input type="text" id="key" placeholder="Masukan Kunci">
+            </div>
+            <div class="input-group">
+                <label for="algorithm">Select Algorithm:</label>
+                <select id="algorithm">
+                    <option value="AES">AES</option>
+                    <option value="RC4">RC4</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+            <button onclick="clearFields()">Clear</button>
+        </div>
+    </div>
+
+    <script src="aes.js"></script>
+    <script src="rc4.js"></script>
+</body>
+
+</html>

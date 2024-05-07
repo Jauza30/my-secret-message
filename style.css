@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url('image/jauzaviolet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #a84286; /* warna teks pink */
+    margin-bottom: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #be619f;
+    border-radius: 20px;
+    background-color: #e5acda;
+    box-shadow: 0 0 10px #a84286(0, 0, 0, 0.1);
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px; /* Meningkatkan jarak antara kolom */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    max-width: 200px; /* Menetapkan lebar maksimum */
+}
+
+
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#plaintext,
+#ciphertext {
+    height: 150px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 15px 20px; /* Menambahkan padding */
+    background-color: #be619f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.buttons button:hover {
+    background-color: #a84286;
+}
+
+.buttons button:active {
+    background-color: #be619f;
+}
+
+input[type="text"]#key {
+    max-width: 200px;
+    margin-top: 10px; /* Menambahkan margin top */
+}
+
+#algorithm {
+    width: 150px; /* Menyesuaikan lebar dropdown */
+    border-radius: 10px; /* Mengatur melengkung pada sisinya */
+}
+
+label[for="algorithm"] {
+    margin-bottom: 10px; /* Menambahkan margin bawah pada label */
+}
+select {
+    width: 100%; /* lebar nanti sesuai dengan parent */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* sudut melengkung */
+    box-sizing: border-box;
+    font-size: 14px;
+}
